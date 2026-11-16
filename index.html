@@ -5,13 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Frontend Mentor | Weather app</title>
   </head>
   <body>
-    <footer class="attribution" style="display: none">
+    <header class="header">
+      <nav class="header__navbar">
+        <img class="header__logo-image" src="./assets/images/logo.svg" alt="project logo" />
+        <button id="unit-btn" type="button" class="header__unit-btn">
+          <img class="header__units-image" src="./assets/images/icon-units.svg" alt="" />
+          <p class="header__text">Units</p>
+          <img class="header__dropdown-image" src="./assets/images/icon-dropdown.svg" alt="" />
+        </button>
+      </nav>
+      <div class="header__dropdown-menu is-hidden">
+        <button id="switch-btn" type="button" class="header__switch-btn">Switch to Imperial</button>
+        <fieldset class="header__unit-group">
+          <legend class="header__unit-title">Temperature</legend>
+          <label class="header__unit-option">
+            Celsius (°C)
+            <input class="header__unit-radio" type="radio" name="temperature" value="celsius" checked />
+            <img src="./assets/images/icon-checkmark.svg" alt="" />
+          </label>
+          <label class="header__unit-option">
+            Fahrenheit (°F)
+            <input class="header__unit-radio" type="radio" name="temperature" value="fahrenheit" />
+          </label>
+        </fieldset>
+        <fieldset class="header__unit-group">
+          <legend class="header__unit-title">Wind Speed</legend>
+          <label class="header__unit-option">
+            km/h
+            <input class="header__unit-radio" type="radio" name="speed" value="km/h" checked />
+            <img src="./assets/images/icon-checkmark.svg" alt="" />
+          </label>
+          <label class="header__unit-option">
+            mph
+            <input class="header__unit-radio" type="radio" name="speed" value="mph" />
+          </label>
+        </fieldset>
+        <fieldset class="header__unit-group">
+          <legend class="header__unit-title">Precipitation</legend>
+          <label class="header__unit-option">
+            Millimeters (mm)
+            <input class="header__unit-radio" type="radio" name="lenght" value="km/h" checked />
+            <img src="./assets/images/icon-checkmark.svg" alt="" />
+          </label>
+          <label class="header__unit-option">
+            Inches (in)
+            <input class="header__unit-radio" type="radio" name="length" value="mph" />
+          </label>
+        </fieldset>
+      </div>
+    </header>
+    <!-- <h1 class="page-title">How`s the sky looking today?</h1> -->
+    <!-- <footer class="attribution" style="display: none">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by
       <a href="#">Your Name Here</a>.
-    </footer>
+    </footer> -->
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

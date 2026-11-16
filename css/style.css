@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Brocolage';
+  src: url(/assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf);
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DMSans-Italic';
+  src: url(/assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DMSans-Variable';
+  src: url(/assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+body {
+  background-color: var(--backround-color);
+  font-family: 'Brocolage', sans-serif;
+}
+.is-hidden {
+  display: none;
+}
+.header {
+  margin: 10px 15px 0 15px;
+  position: relative;
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo-image {
+  width: 140px;
+}
+.header__unit-btn {
+  background-color: var(--swtich-btn-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 7px;
+  border-radius: 6px;
+}
+.header__text {
+  color: var(--switch-btn-text-color);
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.header__units-image {
+}
+.header__dropdown-image {
+}
+.header__dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background-color: var(--dropdown-background-color);
+  padding: 5px;
+  border-radius: 8px;
+  transition: 1s ease-in;
+}
+.header__switch-btn {
+  width: 100%;
+  padding: 6px 30px 6px 6px;
+  border-radius: 6px;
+  display: flex;
+  font-size: 0.9rem;
+  color: var(--dropdown-font-color);
+  font-weight: 300;
+  background-color: var(--dropdown-btn-switch-background);
+}
+.header__unit-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+.header__unit-group:not(:last-child) {
+  border-bottom: 1.5px solid var(--dropdown-fieldset-border-color);
+}
+.header__unit-title {
+  color: var(--dropdown-title-font-color);
+  font-size: 0.75rem;
+  padding: 8px 0 8px 8px;
+}
+.header__unit-option {
+  background-color: var(--dropdown-option-background-color);
+  border-radius: 6px;
+  padding: 4px;
+  color: var(--dropdown-option-font-color);
+  font-weight: 300;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header__unit-radio {
+}
