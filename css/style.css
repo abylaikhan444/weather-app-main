@@ -60,7 +60,6 @@ body {
   background-color: var(--dropdown-background-color);
   padding: 5px;
   border-radius: 8px;
-  transition: 1s ease-in;
 }
 .header__switch-btn {
   width: 100%;
@@ -98,4 +97,114 @@ body {
   justify-content: space-between;
 }
 .header__unit-radio {
+}
+
+.page-title {
+  font-family: 'Brocolage';
+  color: var(--page-title-font-color);
+  font-size: 3.6rem;
+  box-sizing: content-box;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 50px;
+  padding: 0 10px;
+  line-height: 1.1;
+}
+
+/* Search Container */
+
+.search {
+  margin: 50px 15px 10px 15px;
+}
+.search__field {
+  background-color: var(--search-background-input);
+  display: flex;
+  padding: 15px 0 15px 30px;
+  gap: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--weather-details-card-border-color);
+}
+.search__input {
+  color: var(--search-color-input);
+}
+.search__input::placeholder {
+  font-size: 1.25rem;
+  width: 100%;
+  color: #c5c3c3;
+}
+.search-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px 0;
+  font-size: 1.3rem;
+  color: var(--search-color-btn);
+  background-color: var(--search-background-btn);
+  border-radius: 8px;
+}
+
+/* MAIN SECTION */
+
+.main {
+  margin: 30px 15px 0 15px;
+}
+.weather {
+}
+.weather__card {
+  background-image: url(/assets/images/bg-today-small.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 22px;
+  padding: 25px;
+}
+.weather__city-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--wheather-color-city-info);
+}
+.weather__city {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.weather__date {
+  font-size: 1.2rem;
+}
+.weather__temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.weather__info-icon {
+  width: 100px;
+}
+.weather__degree {
+  font-size: 6rem;
+  font-weight: 500;
+  color: var(--weather-degree-color);
+}
+.weather__details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+.weather__details-card {
+  background-color: var(--weather-background-color);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--weather-details-card-border-color);
+}
+.weather__details-label {
+  color: var(--wheather-color-label);
+  font-size: 1.2rem;
+}
+.weather__details-value {
+  color: var(--weather-color-value);
+  font-size: 2rem;
+  font-weight: 100;
+
 }

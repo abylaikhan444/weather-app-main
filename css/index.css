@@ -13,4 +13,19 @@
   --dropdown-font-color: #fff;
   --dropdown-option-font-color: #fff;
   --dropdown-title-font-color: hsl(240, 6%, 70%);
+  /* PAGE TITILE */
+  --page-title-font-color: #fff;
+  /* SEARCH CONTAINER */
+  --search-background-input: hsl(243, 27%, 20%);
+  --search-background-btn: hsl(233, 67%, 56%);
+  --search-color-btn: #fff;
+  --search-color-input: #fff;
+  /* MAIN */
+  /* WHEATHER CARD */
+  --wheather-color-city-info: #dadada;
+  --weather-degree-color: #fff;
+  --weather-background-color: hsl(243, 27%, 20%);
+  --wheather-color-label: #dadada;
+  --weather-color-value: #fff;
+  --weather-details-card-border-color: #3d3d58;
 }
