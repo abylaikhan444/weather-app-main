@@ -206,5 +206,105 @@ body {
   color: var(--weather-color-value);
   font-size: 2rem;
   font-weight: 100;
+}
 
+/* FORECAST */
+
+.forecast {
+  margin-top: 20px;
+}
+.forecast__title {
+  color: var(--forecast-title-color);
+  font-size: 1.3rem;
+}
+.forecast__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+.forecast__box {
+  background-color: var(--forecast-background-card-color);
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--forecast-border-color);
+}
+.forecast__day {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--forecast-day-color);
+}
+.forecast__temperature {
+  display: flex;
+  justify-content: space-between;
+}
+/* .forecast__weather-icon {
+  
+} */
+.forecast__value {
+  color: var(--forecast-temperature-color);
+}
+
+/* HOURLY FORECAST */
+
+.hourly-forecast {
+  background-color: var(--hourly-forecast-background);
+  margin-top: 30px;
+  padding: 20px 10px;
+  border-radius: 18px;
+}
+.hourly-forecast__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.hourly-forecast__title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.hourly-forecast__dropdown-icon {
+  width: 15px;
+}
+.hourly-forecast__btn {
+  display: flex;
+  gap: 8px;
+  background-color: var(--hourly-forecast-btn-background);
+  padding: 5px 15px;
+  border-radius: 8px;
+}
+.hourly-forecast__days {
+  color: #fff;
+}
+.hourly-forecast__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hourly-forecast__times {
+  background-color: var(--hourly-forecast-times-background);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  align-items: center;
+  border-radius: 8px;
+}
+.hourly-forecast__left-side {
+  display: flex;
+  align-items: center;
+}
+.hourly-forecast__weather-icon {
+  width: 50px;
+}
+.hourly-forecast__label {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
+}
+.hourly-forecast__value {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 200;
 }

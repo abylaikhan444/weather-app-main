@@ -28,4 +28,15 @@
   --wheather-color-label: #dadada;
   --weather-color-value: #fff;
   --weather-details-card-border-color: #3d3d58;
+  /* FORECAST */
+  --forecast-title-color: #fff;
+  --forecast-day-color: #fff;
+  --forecast-temperature-color: #fff;
+  --forecast-background-card-color: hsl(243, 27%, 20%);
+  --forecast-border-color: #3d3d58;
+  /* HOURLY-FORECAST */
+  --hourly-forecast-background: hsl(243, 27%, 20%);
+  --hourly-forecast-btn-background: hsl(243, 23%, 30%);
+  --hourly-forecast-times-background: hsl(243, 23%, 30%);
+
 }
